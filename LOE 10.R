@@ -1,0 +1,5 @@
+given_vector=c(12,34,56,78,199,11)
+maximum=max(given_vector)
+print(paste("the maximum number is=",maximum))
+minimum=min(given_vector)
+print(paste("the minimum number is=",minimum))

@@ -1,0 +1,5 @@
+name_1= readline(prompt = "Enter ur name")
+age_1= as.integer(readline(prompt = "Enter ur age"))
+print(paste("YOUR NAME is:",name_1))
+print(paste("YOUR AGE IS:",age_1))
+print(version)

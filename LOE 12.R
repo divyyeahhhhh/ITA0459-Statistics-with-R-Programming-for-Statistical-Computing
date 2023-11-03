@@ -1,0 +1,6 @@
+vector_a=c(1,2,3)
+vector_b=c(4,5,6)
+vector_c=c(7,8,9)
+matrix_of_vectors=cbind(vector_a,vector_b,vector_c)
+print("THE VECTORS INTO MATRIX")
+print(matrix_of_vectors)
