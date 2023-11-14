@@ -1,0 +1,10 @@
+values=c(90,50,70,80,70,60,20,30,80,90,20)
+print(paste("the mean",mean(values)))
+print(paste("the median",median(values)))
+values_mode=as.numeric(names(sort(table(values),decreasing=TRUE)[1]))
+print(paste("the mode is",values_mode))
+high=sort(values,decreasing = TRUE)
+print(paste("the second hightest",max(high[2])))
+high=sort(values,decreasing = FALSE)
+print(paste("the second LOWEST",max(high[3])))
+
