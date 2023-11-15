@@ -1,0 +1,12 @@
+library(reshape2)
+data=datasets::airquality
+summary_airquality=summary(data)
+print(summary_airquality)
+melted_data_air= melt(data)
+print(melted_data_air)
+melted_data_id= melt(airquality,id.vars = c("Month","Day"))
+print(melted_data_id)
+casted_data= dcast(melted_data_id,Month + Day ~ variable)
+print(casted_data)
+average_per_month=dcast(melted_data_id,Month~variable,fun.aggregate = mean)
+print(average_per_month)
